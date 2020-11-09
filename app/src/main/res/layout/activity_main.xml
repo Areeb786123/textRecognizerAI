@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/arizonia"
+        android:text="TextRecognizer"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="40dp">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:src="@drawable/cameraimg"
+            android:background="@color/white"
+            android:id="@+id/img">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_height="156dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AI will detect text here"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/textdisplay">
+
+            </EditText>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_marginTop="100dp"
+            app:cardCornerRadius="45dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0F2B2B"
+                android:orientation="horizontal"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSelect"
+                    android:layout_width="120dp"
+                    android:background="@drawable/btnbg"
+                    android:text="Gallery"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_height="40dp"></androidx.appcompat.widget.AppCompatButton>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnrecognize"
+                    android:layout_width="120dp"
+                    android:textStyle="bold"
+                    android:layout_height="40dp"
+                    android:text="Detect"
+                    android:layout_marginTop="50dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/btnbg"
+                    android:layout_marginLeft="70dp"></androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
